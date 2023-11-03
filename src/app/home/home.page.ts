@@ -12,8 +12,9 @@ export class HomePage {
   constructor(    public formBuilder: UntypedFormBuilder,
     ) {
       this.form = this.formBuilder.group({
-          segment: [3],
+          segment: [],
     });
-      this.form.patchValue({segment:"3"})
+      this.form.patchValue({segment:3}) // doesn't work while it should
+      this.form.patchValue({segment:"3"}) // works
   }
 }
