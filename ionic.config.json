@@ -1,0 +1,7 @@
+{
+  "name": "segment-number-error",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
