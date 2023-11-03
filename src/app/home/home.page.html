@@ -14,7 +14,13 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <form [formGroup]="form">
+      <ion-segment class="segment no-width" id="subtype-segment" formControlName="segment">
+        <ion-segment-button value=1>1</ion-segment-button>
+        <ion-segment-button value=2>2</ion-segment-button>
+        <ion-segment-button value=3>3</ion-segment-button>
+        <ion-segment-button value=4>4</ion-segment-button>
+      </ion-segment>
+    </form>
   </div>
 </ion-content>
